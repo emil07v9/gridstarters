@@ -9,6 +9,10 @@
       }
 
       .container {
+        height: 100vh;
+        grid-gap: 5px;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
       }
 
       .item {
@@ -16,16 +20,28 @@
       }
 
       .item-a {
+        background-color: yellow;
+        grid-row: 1/2;
       }
 
       .item-b {
+        background-color: green;
+        grid-row: 2/4;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 10px;
       }
 
       .item-d {
+        background-color: red;
+        grid-row: 4/5;
       }
 
       article {
         border: 1px solid #333;
+        background-color: blue;
+        margin: 1rem;
       }
 
       @media screen and (min-width: 768px) {
